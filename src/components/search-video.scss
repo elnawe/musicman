@@ -1,0 +1,61 @@
+.search-video {
+    background: #F0F0F0;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    width: 45%;
+
+    &--box {
+        margin: 10px 0;
+        padding: 5px;
+        text-align: center;
+    }
+
+    &--input {
+        border: 2px solid #AAAAAA;
+        border-radius: 3px;
+        font-family: sans-serif;
+        font-size: 13px;
+        padding: 12px 5px;
+        width: 90%;
+    }
+
+    &--results {
+        margin: 10px 0;
+        padding: 5px;
+        text-align: left;
+
+        .results {
+
+            &--item {
+                border-top: 1px solid #3F3F3F;
+                border-width: 1px 0;
+                font-family: sans-serif;    
+                padding: 10px;
+                cursor: pointer;
+                transition: background 0.5s ease-in-out;
+
+                &:last-child {
+                    border-bottom: 1px solid #3F3F3F;
+                }
+
+                &:hover {
+                    background: #C0C0C0;
+                }
+
+                &-image {
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+
+                &-title {
+                    display: inline-block;
+                    font-weight: bold;
+                    margin: 2px 0;
+                    vertical-align: top;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
