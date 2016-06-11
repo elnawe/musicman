@@ -4,12 +4,15 @@
   "description": "Aplicación para poner en cola música que sea votada por usuarios",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "gulp --production"
   },
   "author": "Nahuel J. Sacchetti",
   "license": "ISC",
   "dependencies": {
+    "connect-firebase": "0.0.9",
     "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "firebase": "^3.0.4",
     "jade": "^1.11.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",

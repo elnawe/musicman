@@ -83,13 +83,15 @@ gulp.task('watch-style', function () {
 });
 
 gulp.task('default', ['build-script', 'build-view', 'build-style', 'watch-style'], function () {
-    browsersync.init({
-        files: ['./build/bundle.js', './build/styles.css'],
-        notify: false,
-        port: 8000,
-        server: {
-            baseDir: './build'
-        },
-        ui: false
-    });
+    if (!argv.production) {
+        browsersync.init({
+            files: ['./build/bundle.js', './build/styles.css'],
+            notify: false,
+            port: 8000,
+            server: {
+                baseDir: './build'
+            },
+            ui: false
+        });
+    }
 });
